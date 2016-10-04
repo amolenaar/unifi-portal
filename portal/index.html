@@ -14,20 +14,26 @@
         bottom: 0;
         left: 0;
         right: 0;
+        line-height: 100vh;
         text-align: center;
-        height: 100%;
-        padding: 1.875rem 0;
       }
       .center-block {
+        line-height: 100%;
         display: inline-block;
+        padding: 1.875rem 0;
         vertical-align: middle;
-        max-width: 50%;
+        max-width: 400px;
+        margin: auto;
       }
       .logo {
-        max-width: 50%;
+        max-width: 100%;
+        max-height: 200px;
       }
       .button-xlarge {
         font-size: 125%;
+      }
+      .accept-license {
+        margin: 1.875rem 0;
       }
     </style>
   </head>
@@ -36,7 +42,7 @@
       <div class="center-block">
         <img class="logo" src="logo.png">
         <form class="accept-license" method="post" action="login">
-          <p>Hiermee bevestigd u gebruik te willen maken van het Belinda Terrisse gastnetwerk. U mag dit netwerk alleen gebruiken voor legitieme doeleinden.</p>
+          <p>Hiermee bevestigd u gebruik te willen maken van het Belinda Terrisse gastnetwerk.<br>U mag dit netwerk alleen gebruiken voor legitieme doeleinden.</p>
           <input type="submit" name="connect" class="pure-button button-xlarge pure-button-primary" value="Ik ga akkoord" />
         </form>
       </div>
